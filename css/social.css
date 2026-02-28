@@ -1,0 +1,131 @@
+/* ==================== */
+/* Fixed Social Icons - Bottom Right */
+/* ==================== */
+
+.fixed-social {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 1000;
+}
+
+.social-circle {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    position: relative;
+}
+
+/* Tooltip Effect */
+.social-circle::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    right: 55px;
+    background: #1a1a2e;
+    color: #ffffff;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.social-circle:hover::before {
+    opacity: 1;
+    visibility: visible;
+    right: 50px;
+}
+
+/* Icon Brand Colors */
+.social-circle.icon-github {
+    background: #333;
+}
+
+.social-circle.icon-linkedin {
+    background: #0A66C2;
+}
+
+.social-circle.icon-whatsapp {
+    background: #25D366;
+}
+
+.social-circle.icon-email {
+    background: #EA4335;
+}
+
+.social-circle:hover {
+    transform: scale(1.15);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Social Buttons (Alternative Style) */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid;
+    color: #666;
+    border-color: #333;
+}
+
+.social-btn span {
+    color: inherit;
+}
+
+.social-btn.icon-github:hover {
+    color: #ffffff;
+    border-color: #ffffff;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.social-btn.icon-linkedin:hover {
+    color: #0A66C2;
+    border-color: #0A66C2;
+    box-shadow: 0 0 20px rgba(10, 102, 194, 0.5);
+}
+
+.social-btn.icon-whatsapp:hover {
+    color: #25D366;
+    border-color: #25D366;
+    box-shadow: 0 0 20px rgba(37, 211, 102, 0.5);
+}
+
+.social-btn.icon-email:hover {
+    color: #EA4335;
+    border-color: #EA4335;
+    box-shadow: 0 0 20px rgba(234, 67, 53, 0.5);
+}
+
+.social-btn:hover {
+    transform: translateY(-2px);
+}
+
+.social-btn:active {
+    transform: scale(0.98);
+}

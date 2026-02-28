@@ -1,0 +1,523 @@
+/* ==================== */
+/* Vector Art / Atmospheric Thematic Styles */
+/* Theme: Digital Horizon (Tech / Nature Blend) */
+/* ==================== */
+
+#projects.section {
+    position: relative;
+    padding: 0 !important;
+    overflow: hidden;
+    transition: background 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+    height: 100vh;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Night Mode (Default) */
+#projects:not(.day-mode) {
+    background: linear-gradient(to bottom, #090a0f 0%, #1b1626 40%, #2a223f 70%, #3d2f5b 100%) !important;
+}
+
+/* Day Mode */
+#projects.day-mode {
+    background: linear-gradient(to bottom, #4facfe 0%, #00f2fe 60%, #4ae5ff 100%) !important;
+}
+
+/* --- Typography --- */
+#projects .section-title {
+    display: block !important;
+    text-align: center !important;
+    font-size: 3rem;
+    padding-top: 100px; /* Kept pulled down as requested */
+    margin: 0;
+    width: 100%;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    pointer-events: none;
+}
+
+/* --- Container --- */
+.mountain-world {
+    position: relative;
+    width: 100vw;
+    flex-grow: 1;
+    margin: 0 auto;
+    background: transparent;
+    overflow: hidden;
+}
+
+/* --- Atmospheric Sky Elements --- */
+.sky-elements {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.sun, .moon {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transition: all 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+    left: 10%;
+    top: 18%; /* Pulled down to match title space */
+}
+
+/* Theme Toggle Hint */
+.theme-hint {
+    position: absolute;
+    top: 115px; /* Aligned with project title text */
+    right: 40px; /* Slightly more breathing room from the edge */
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.85); /* Slightly brighter text */
+    background: rgba(255, 255, 255, 0.12); /* Slightly more visible background */
+    padding: 6px 15px;
+    border-radius: 30px;
+    backdrop-filter: blur(8px);
+    z-index: 101;
+    pointer-events: none;
+    border: 1px solid rgba(255, 255, 255, 0.25); /* More defined border */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    animation: pulse-hint 2s infinite alternate;
+}
+
+@keyframes pulse-hint {
+    from { opacity: 0.6; } /* Brighter base opacity */
+    to { opacity: 1; }
+}
+
+.sun {
+    background: radial-gradient(circle, #fff 0%, #ffdf00 40%, #ff8c00 100%);
+    box-shadow: 0 0 60px #ffdf00, 0 0 120px rgba(255, 140, 0, 0.6);
+}
+
+.moon {
+    background: radial-gradient(circle, #f4f6f0 0%, #e0e4dd 60%, #b8bec5 100%);
+    box-shadow: 0 0 40px rgba(200, 210, 230, 0.6), inset -15px -15px 20px rgba(0,0,0,0.1);
+    opacity: 0;
+}
+
+#projects.day-mode .sun { opacity: 1; transform: translateY(0); }
+#projects.day-mode .moon { opacity: 0; transform: translateY(100px); }
+#projects:not(.day-mode) .sun { opacity: 0; transform: translateY(100px); }
+#projects:not(.day-mode) .moon { opacity: 1; transform: translateY(0); }
+
+.star-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    z-index: 1;
+}
+
+#projects.day-mode .star-container { opacity: 0; }
+
+.pixel-star {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 6px #fff;
+    animation: pulse-star 3s infinite alternate;
+}
+
+@keyframes pulse-star {
+    0% { opacity: 0.3; transform: scale(0.8); }
+    100% { opacity: 1; transform: scale(1.2); }
+}
+
+/* --- Professional Vector Clouds (Bubble Style) --- */
+.vector-cloud {
+    position: absolute;
+    width: 120px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    animation: drift-cloud linear infinite;
+    transition: all 1.5s ease;
+}
+
+.vector-cloud::before, .vector-cloud::after {
+    content: '';
+    position: absolute;
+    background: inherit;
+    border-radius: 50%;
+}
+
+.vector-cloud::before { width: 60px; height: 60px; top: -30px; left: 20px; }
+.vector-cloud::after { width: 50px; height: 50px; top: -20px; right: 20px; }
+
+#projects.day-mode .vector-cloud {
+    background: rgba(255, 255, 255, 0.9);
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.05));
+}
+
+@keyframes drift-cloud {
+    from { transform: translateX(-300px); }
+    to { transform: translateX(120vw); }
+}
+
+.bird-container {
+    position: absolute;
+    top: 20%;
+    left: -50px;
+    animation: bird-fly 25s linear infinite;
+    z-index: 10;
+    opacity: 0;
+}
+
+#projects.day-mode .bird-container { opacity: 0.6; }
+
+.vector-bird {
+    width: 24px;
+    height: 12px;
+    position: relative;
+}
+
+.vector-bird::before, .vector-bird::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 14px;
+    height: 2px;
+    background: #1a2a40;
+    border-radius: 2px;
+}
+
+.vector-bird::before {
+    left: 0;
+    transform-origin: right center;
+    animation: wing-beat-l 0.6s ease-in-out infinite alternate;
+}
+
+.vector-bird::after {
+    right: 0;
+    transform-origin: left center;
+    animation: wing-beat-r 0.6s ease-in-out infinite alternate;
+}
+
+@keyframes wing-beat-l { from { transform: rotate(-15deg); } to { transform: rotate(35deg); } }
+@keyframes wing-beat-r { from { transform: rotate(15deg); } to { transform: rotate(-35deg); } }
+@keyframes bird-fly { from { transform: translateX(-100px) translateY(0); } to { transform: translateX(120vw) translateY(-80px); } }
+
+.meteor {
+    position: absolute;
+    top: -20%;
+    left: 80%;
+    width: 150px;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(100,200,255,0.8) 80%, rgba(255,255,255,1) 100%);
+    animation: meteor-slash 12s linear infinite;
+    z-index: 1;
+    opacity: 0;
+}
+
+@keyframes meteor-slash {
+    0% { transform: translate(0, 0) rotate(-40deg); opacity: 0; }
+    2% { opacity: 1; }
+    6% { transform: translate(-80vw, 80vh) rotate(-40deg); opacity: 0; }
+    100% { transform: translate(-80vw, 80vh) rotate(-40deg); opacity: 0; }
+}
+
+/* --- Complex Vector Mountains --- */
+.vector-mtn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    transition: background 1.5s ease, filter 1.5s ease;
+}
+
+.layer-back {
+    z-index: 3;
+    background: linear-gradient(to bottom, #4a3e6d 0%, #2a223f 100%);
+    clip-path: polygon(0 100%, 0 60%, 10% 45%, 20% 55%, 30% 35%, 40% 50%, 50% 25%, 60% 45%, 70% 30%, 80% 55%, 90% 40%, 100% 50%, 100% 100%);
+    filter: blur(4px);
+    opacity: 0.7;
+}
+
+#projects.day-mode .layer-back {
+    background: linear-gradient(to bottom, #7cc0ff 0%, #4facfe 100%);
+}
+
+.layer-mid {
+    z-index: 4;
+    background: linear-gradient(to bottom, #342854 0%, #1e1832 100%);
+    clip-path: polygon(0 100%, 0 80%, 15% 65%, 25% 75%, 35% 55%, 45% 70%, 55% 45%, 65% 60%, 75% 40%, 85% 65%, 100% 55%, 100% 100%);
+    filter: blur(1px);
+}
+
+#projects.day-mode .layer-mid {
+    background: linear-gradient(to bottom, #4caf50 0%, #2e7d32 100%);
+}
+
+.layer-front {
+    z-index: 5;
+    background: linear-gradient(to bottom, #1d162d 0%, #0a0812 100%);
+    clip-path: polygon(0% 100%, 0% 98%, 15% 98%, 25% 99%, 35% 62%, 40% 35%, 45% 88%, 55% 98%, 65% 48%, 70% 65%, 75% 75%, 85% 100%, 100% 100%);
+    box-shadow: 0 -10px 40px rgba(0,0,0,0.6);
+}
+
+#projects.day-mode .layer-front {
+    background: linear-gradient(to bottom, #2e7d32 0%, #1b5e20 100%);
+}
+
+.mountain-trail {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 6;
+    pointer-events: none;
+    border-top: 3px dashed rgba(0, 242, 254, 0.8);
+    clip-path: polygon(0% 100%, 0% 98%, 15% 98%, 25% 99%, 35% 62%, 40% 35%, 45% 88%, 55% 98%, 65% 48%, 70% 65%, 75% 75%, 85% 100%, 100% 100%);
+    filter: drop-shadow(0 -2px 5px rgba(0, 242, 254, 1));
+}
+
+#projects.day-mode .mountain-trail {
+    border-top-color: rgba(255, 255, 255, 0.8);
+    filter: drop-shadow(0 -2px 5px rgba(255, 255, 255, 0.5));
+}
+
+/* --- The Cyber-Hiker (Optimized for Smoothness) --- */
+#climber {
+    position: absolute;
+    width: 30px;
+    height: 50px;
+    z-index: 100;
+    transform: translateX(-50%); /* Centered horizontally, bottom property now controls the feet */
+    pointer-events: none;
+    will-change: left, bottom; /* Hardware acceleration */
+}
+
+#climber {
+    --hiker-color: #00f2fe;
+    --hiker-glow: rgba(0, 242, 254, 0.8);
+}
+
+#projects.day-mode #climber {
+    --hiker-color: #ff5722;
+    --hiker-glow: rgba(255, 87, 34, 0.4);
+}
+
+.hiker-head, .hiker-torso, .hiker-backpack, .hiker-arm, .hiker-leg {
+    background: var(--hiker-color);
+    border: 2px solid #000;
+    box-shadow: 0 0 10px var(--hiker-glow);
+    position: absolute;
+    /* Limit transition to color/glow to avoid position lag */
+    transition: background-color 1s ease, box-shadow 1s ease, border-color 1s ease;
+}
+
+.hiker-head { width: 14px; height: 14px; border-radius: 50%; top: -2px; left: 50%; transform: translateX(-50%); z-index: 2; }
+.hiker-torso { width: 18px; height: 22px; border-radius: 4px; top: 13px; left: 50%; transform: translateX(-50%); z-index: 1; }
+.hiker-backpack { width: 10px; height: 16px; border-radius: 3px; top: 15px; left: -5px; z-index: 0; }
+.hiker-arm { width: 5px; height: 18px; top: 15px; border-radius: 3px; transform-origin: top center; z-index: 3; }
+.hiker-arm-l { left: 2px; }
+.hiker-arm-r { right: 2px; }
+.hiker-leg { width: 6px; height: 18px; top: 33px; border-radius: 2px; transform-origin: top center; z-index: 1; }
+.hiker-l { left: 7px; }
+.hiker-r { right: 7px; }
+
+#climber.climbing .hiker-l { animation: step-swing 0.6s infinite alternate; }
+#climber.climbing .hiker-r { animation: step-swing 0.6s infinite alternate-reverse; }
+#climber.climbing .hiker-arm-l { animation: step-swing 0.6s infinite alternate-reverse; } 
+#climber.climbing .hiker-arm-r { animation: step-swing 0.6s infinite alternate; }
+
+@keyframes step-swing {
+    from { transform: rotate(-25deg); }
+    to { transform: rotate(25deg); }
+}
+
+#climber.cheering { animation: slow-victory 0.8s infinite alternate; }
+#climber.cheering .hiker-arm { transform: rotate(-150deg); top: 10px; }
+
+@keyframes slow-victory {
+    from { transform: translate(-50%, -100%) translateY(0); }
+    to { transform: translate(-50%, -100%) translateY(-25px); }
+}
+
+/* --- Project Popup (Green Day Mode Theme) --- */
+.project-popup {
+    position: absolute;
+    background: rgba(15, 20, 35, 0.85);
+    border: 1px solid rgba(0, 242, 254, 0.3);
+    border-radius: 12px;
+    padding: 25px;
+    color: #fff;
+    width: 340px;
+    z-index: 1000;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+    font-family: 'Poppins', sans-serif;
+    display: none;
+    pointer-events: auto;
+    backdrop-filter: blur(10px);
+    transition: all 0.5s ease;
+}
+
+#projects.day-mode .project-popup {
+    background: rgba(241, 248, 233, 0.95); /* Light Green Glass */
+    border: 2px solid #2e7d32; /* Deep Green Border */
+    color: #1b5e20; /* Dark Green Text */
+    box-shadow: 0 15px 35px rgba(0, 50, 0, 0.1);
+}
+
+.project-popup.active {
+    display: block;
+    animation: float-up 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes float-up {
+    from { transform: translateY(20px) scale(0.9); opacity: 0; }
+    to { transform: translateY(0) scale(1); opacity: 1; }
+}
+
+.project-popup .close-popup {
+    position: absolute; top: 15px; right: 15px;
+    background: transparent; border: none; color: rgba(0,0,0,0.4);
+    font-size: 24px; cursor: pointer;
+}
+
+.project-popup h3 { margin-top: 0; color: #00f2fe; border-bottom: 2px solid rgba(0, 242, 254, 0.2); padding-bottom: 10px; }
+#projects.day-mode .project-popup h3 { color: #1b5e20; border-bottom-color: rgba(46, 125, 50, 0.2); }
+
+.project-popup p { font-size: 13px; line-height: 1.6; }
+.project-popup .project-tech { display: flex; flex-wrap: wrap; gap: 8px; margin: 15px 0; }
+.project-popup .project-tech span { 
+    background: rgba(0, 242, 254, 0.1); color: #00f2fe;
+    padding: 4px 10px; font-size: 11px; border-radius: 4px;
+    border: 1px solid rgba(0, 242, 254, 0.3); 
+}
+
+#projects.day-mode .project-popup .project-tech span {
+    background: rgba(76, 175, 80, 0.1);
+    color: #2e7d32;
+    border-color: #81c784;
+}
+
+.project-popup .github-link { 
+    display: inline-flex; align-items: center; margin-top: 10px; 
+    background: linear-gradient(90deg, #00f2fe, #4facfe);
+    color: #000; text-decoration: none; padding: 8px 20px; 
+    border-radius: 25px; font-weight: 700;
+}
+
+#projects.day-mode .project-popup .github-link {
+    background: linear-gradient(90deg, #4caf50, #2e7d32);
+    color: #fff;
+}
+
+.mountain-marker { position: absolute; cursor: pointer; z-index: 20; transition: transform 0.3s; }
+.mountain-marker:hover { transform: scale(1.2); }
+.flag-pole { width: 3px; height: 50px; background: #888; position: relative; }
+.flag-cloth { width: 30px; height: 20px; background: #e91e63; position: absolute; top: 2px; left: 3px; clip-path: polygon(0 0, 100% 0, 85% 50%, 100% 100%, 0 100%); animation: tech-wave 2s ease-in-out infinite; }
+@keyframes tech-wave { 0%, 100% { transform: skewY(-2deg); } 50% { transform: skewY(10deg); } }
+
+.back-to-top { bottom: 20px !important; left: 20px !important; right: auto !important; position: fixed !important; z-index: 9999; transform: scale(0.8); }
+.back-to-top.visible { opacity: 0.9 !important; }
+
+.pixel-footprint { position: absolute; width: 5px; height: 5px; background: var(--hiker-color); border-radius: 50%; z-index: 7; box-shadow: 0 0 10px var(--hiker-color); animation: energy-fade 2s forwards; }
+@keyframes energy-fade { from { opacity: 1; transform: scale(1); } to { opacity: 0; transform: scale(0.2); } }
+
+/* --- Thematic Modals --- */
+.thematic-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+    backdrop-filter: blur(8px);
+}
+
+.thematic-modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.thematic-modal .modal-content {
+    background: #161b22;
+    padding: 40px;
+    border-radius: 20px;
+    position: relative;
+    max-width: 600px;
+    width: 90%;
+    transform: scale(0.8);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid #30363d;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+}
+
+.thematic-modal.active .modal-content {
+    transform: scale(1);
+}
+
+.thematic-modal .close-modal {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: #8b949e;
+    font-size: 30px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.thematic-modal .close-modal:hover {
+    color: #ffffff;
+}
+
+#a-modal-inner-content {
+    color: #f0f6fc;
+}
+
+#a-modal-inner-content h3 {
+    color: #58a6ff;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+#a-modal-inner-content p {
+    line-height: 1.6;
+    color: #8b949e;
+    font-size: 16px;
+}
+
+#a-modal-inner-content .achievement-year {
+    display: inline-block;
+    background: rgba(88, 166, 255, 0.1);
+    color: #58a6ff;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}

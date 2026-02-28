@@ -1,0 +1,625 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yeap Boon Shen - Portfolio</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/social.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/education.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+    <link rel="stylesheet" href="css/achievements.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/background.css" />
+    <link rel="stylesheet" href="css/thematic.css" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Floating Background Elements -->
+    <div class="floating-bg">
+      <!-- Pikachu themed elements -->
+      <div class="pikachu-face float-1"></div>
+      <div class="lightning-bolt float-2" style="top: 25%; left: 88%"></div>
+      <div class="floating-element star medium float-3"></div>
+      <div class="pikachu-cheek float-4" style="top: 45%; left: 8%"></div>
+      <div class="lightning-bolt float-5" style="top: 65%; left: 92%"></div>
+      <div class="floating-element star small float-6"></div>
+      <div class="pikachu-face float-7" style="top: 75%; left: 85%"></div>
+      <div class="floating-element glow large float-8" style="top: 30%; left: 3%"></div>
+      <div class="lightning-bolt float-9" style="top: 55%; left: 95%"></div>
+      <div class="floating-element star small float-10" style="top: 85%; left: 12%"></div>
+      <div class="pikachu-cheek" style="top: 20%; left: 92%; animation-delay: -8s"></div>
+      <div class="floating-element glow medium" style="top: 70%; left: 5%; animation-delay: -12s"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#" class="logo">YBS</a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <span class="availability-badge">AVAILABLE FOR INTERNSHIP: JULY 2026 - OCT 2026</span>
+        <h1>Hi, I'm <span class="gradient-text">Yeap Boon Shen</span></h1>
+        <p class="subtitle">
+          A Security Technology student at MMU Melaka with a passion for software development and digital security.
+        </p>
+
+        <div class="buttons">
+          <a href="#projects" class="btn btn-primary"
+            >View My Work
+            <svg
+              class="arrow"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path></svg
+          ></a>
+          <a href="YEAP%20BOON%20SHEN%20resume.pdf" class="btn btn-secondary" target="_blank">Download CV</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-grid">
+            <!-- Left: Text -->
+            <div class="about-text">
+              <p>
+                Hello! I'm Boon Shen, a <span class="highlight">Security Technology</span> undergraduate at
+                <a href="https://www.mmu.edu.my/" target="_blank">MMU Melaka</a>, currently on the
+                <span class="highlight">Dean's List</span>. I enjoy building practical applications and exploring
+                cybersecurity challenges.
+              </p>
+              <p>
+                I've worked on various projects — from building a
+                <span class="highlight">full-stack confession platform</span> with Flask and PostgreSQL, to developing
+                desktop applications in C++ with Qt Framework, and even creating a WiFi security auditing tool for
+                educational purposes.
+              </p>
+              <p>
+                One of my proudest moments was completing <span class="highlight">100% of all challenges</span> in MMU's
+                Capture The Flag competition, covering Forensics, Cryptography, Steganography, and Network Security. I
+                also participated in <span class="highlight">CodeNection 2025</span>
+                hackathon where my team prototyped Tutorway, an on-demand academic assistance platform.
+              </p>
+              <p>
+                Outside of coding, I play badminton, explore digital art on my iPad, and occasionally help friends with
+                design projects. I'm currently seeking an internship opportunity from July to October 2026.
+              </p>
+            </div>
+
+            <!-- Right: Photo & Info -->
+            <div class="about-aside">
+              <div class="about-photo-wrapper">
+                <div class="about-photo">BS</div>
+              </div>
+
+              <div class="about-facts">
+                <div class="about-fact">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                  <span>Kelantan, Malaysia</span>
+                </div>
+                <div class="about-fact">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                    <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                  </svg>
+                  <span>Bachelor of IT (Security Technology)</span>
+                </div>
+                <div class="about-fact">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                    />
+                  </svg>
+                  <span>Dean's List</span>
+                </div>
+              </div>
+
+              <div class="about-skills">
+                <h4>Technologies</h4>
+                <div class="skill-tags">
+                  <span class="skill-tag">Python</span>
+                  <span class="skill-tag">C++</span>
+                  <span class="skill-tag">Java</span>
+                  <span class="skill-tag">Cisco Packet Tracer</span>
+                  <span class="skill-tag">HTML/CSS/JavaScript</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section section-dark" id="education">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Aug 2024 - Present</span>
+              <h3>Bachelor of IT (Security Technology)</h3>
+              <p class="timeline-place">Multimedia University (MMU), Melaka</p>
+              <p>Dean's List recipient. Focusing on cybersecurity, software development, and network security.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Jul 2023 - Jul 2024</span>
+              <h3>Foundation in Information Technology</h3>
+              <p class="timeline-place">Multimedia University (MMU), Cyberjaya</p>
+              <p>Completed foundation studies in a competitive academic environment.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2018 - 2023</span>
+              <h3>Sijil Pelajaran Malaysia (SPM)</h3>
+              <p class="timeline-place">SMJK Chung Cheng, Kelantan</p>
+              <p>Completed secondary education with SPM certification.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section section-dark" id="projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+      </div>
+
+      <div class="mountain-world">
+        <!-- Theme Toggle Hint -->
+        <div class="theme-hint">Double-click background for Day/Night ☀️🌙</div>
+
+        <!-- Atmosphere -->
+        <div class="sky-elements">
+          <div class="sun"></div>
+          <div class="moon"></div>
+          
+          <!-- Stars and Meteors -->
+          <div class="star-container">
+            <div class="pixel-star" style="top: 15%; left: 10%; animation-delay: 0.1s; transform: scale(0.5);"></div>
+            <div class="pixel-star" style="top: 22%; left: 30%; animation-delay: 0.5s; transform: scale(0.8);"></div>
+            <div class="pixel-star" style="top: 18%; left: 55%; animation-delay: 1.2s; transform: scale(1.2);"></div>
+            <div class="pixel-star" style="top: 25%; left: 85%; animation-delay: 0.8s; transform: scale(0.6);"></div>
+            <div class="pixel-star" style="top: 35%; left: 20%; animation-delay: 2s; transform: scale(0.9);"></div>
+            <div class="pixel-star" style="top: 30%; left: 70%; animation-delay: 1.5s; transform: scale(1);"></div>
+            <div class="pixel-star" style="top: 10%; left: 40%; animation-delay: 0.3s; transform: scale(0.7);"></div>
+            <div class="pixel-star" style="top: 40%; left: 80%; animation-delay: 1.8s; transform: scale(1.1);"></div>
+            <div class="meteor"></div>
+          </div>
+
+          <!-- Birds (Day Mode Only) -->
+          <div class="bird-container">
+            <div class="vector-bird"></div>
+          </div>
+          
+          <div class="bird-container" style="top: 25%; animation-delay: -5s; transform: scale(0.7);">
+            <div class="vector-bird" style="animation-duration: 0.5s;"></div>
+          </div>
+
+          <!-- Vector Clouds -->
+          <div class="vector-cloud" style="top: 15%; left: -10%; animation-duration: 45s; animation-delay: -2s; transform: scale(1.2);"></div>
+          <div class="vector-cloud" style="top: 25%; left: -15%; animation-duration: 60s; animation-delay: -15s; transform: scale(0.8); opacity: 0.7;"></div>
+          <div class="vector-cloud" style="top: 20%; left: -20%; animation-duration: 55s; animation-delay: -8s;"></div>
+        </div>
+
+        <!-- Natural Clouds (Vector Bubbles) -->
+        <div class="sky-elements">
+          <div class="sun"></div>
+          <div class="moon"></div>
+          
+          <!-- Stars and Meteors -->
+          <div class="star-container">
+            <div class="pixel-star" style="top: 15%; left: 10%; animation-delay: 0.1s; transform: scale(0.5);"></div>
+            <div class="pixel-star" style="top: 22%; left: 30%; animation-delay: 0.5s; transform: scale(0.8);"></div>
+            <div class="pixel-star" style="top: 18%; left: 55%; animation-delay: 1.2s; transform: scale(1.2);"></div>
+            <div class="pixel-star" style="top: 25%; left: 85%; animation-delay: 0.8s; transform: scale(0.6);"></div>
+            <div class="pixel-star" style="top: 35%; left: 20%; animation-delay: 2s; transform: scale(0.9);"></div>
+            <div class="pixel-star" style="top: 30%; left: 70%; animation-delay: 1.5s; transform: scale(1);"></div>
+            <div class="meteor"></div>
+          </div>
+
+          <!-- Birds (Day Mode Only) -->
+          <div class="bird-container">
+            <div class="vector-bird"></div>
+          </div>
+
+          <!-- Professional Flat Clouds -->
+          <div class="vector-cloud" style="top: 15%; left: -10%; animation-duration: 40s;"></div>
+          <div class="vector-cloud" style="top: 22%; left: -25%; animation-duration: 55s; transform: scale(0.7); opacity: 0.6;"></div>
+          <div class="vector-cloud" style="top: 18%; left: -40%; animation-duration: 48s; transform: scale(1.2);"></div>
+        </div>
+
+        <!-- Layered Vector Mountains -->
+        <div class="vector-mtn layer-back"></div>
+        <div class="vector-mtn layer-mid"></div>
+        <div class="vector-mtn layer-front"></div>
+        
+        <!-- The Climbing Path -->
+        <div class="mountain-trail"></div>
+
+                  <!-- Project Popup -->
+                  <div id="project-popup" class="project-popup">
+                    <button class="close-popup">&times;</button>
+                    <div id="project-popup-content"></div>
+                  </div>
+
+                  <!-- Parallax Mountain Layers -->
+                  <div class="mtn-layer mtn-mid">
+                    <div class="peak peak-1"></div>
+                    <div class="peak peak-2"></div>
+                    <div class="peak peak-3"></div>
+                    <div class="peak peak-4"></div>
+                    <div class="peak peak-5"></div>
+                  </div>
+                  
+                                      <!-- Interactive Path -->
+                                    <div class="mountain-path">
+                                      <!-- Ranked from lowest (bottom) to highest (top) - Pulled Down Further -->
+                                      <div class="mountain-marker" style="bottom: 2%; left: 15%" data-project-id="6" data-label="Dino Catch">
+                                        <div class="flag-pole"><div class="flag-cloth"></div></div>
+                                      </div>
+                                      <div class="mountain-marker" style="bottom: 12%; left: 45%" data-project-id="5" data-label="Budget Planner">
+                                        <div class="flag-pole"><div class="flag-cloth"></div></div>
+                                      </div>
+                                      <div class="mountain-marker" style="bottom: 25%; left: 75%" data-project-id="4" data-label="BINGO Game">
+                                        <div class="flag-pole"><div class="flag-cloth"></div></div>
+                                      </div>
+                                      <div class="mountain-marker" style="bottom: 38%; left: 35%" data-project-id="3" data-label="WiFi Security">
+                                        <div class="flag-pole"><div class="flag-cloth"></div></div>
+                                      </div>
+                                      <div class="mountain-marker" style="bottom: 52%; left: 65%" data-project-id="2" data-label="Timetable System">
+                                        <div class="flag-pole"><div class="flag-cloth"></div></div>
+                                      </div>
+                                      <div class="mountain-marker" style="bottom: 65%; left: 40%" data-project-id="1" data-label="MMU Confessions">
+                                        <div class="flag-pole"><div class="flag-cloth"></div></div>
+                                      </div>
+                                      
+                                      <!-- The Cyber-Hiker with Legs & Arms - Starting at Center -->
+                                      <div id="climber" style="bottom: 2%; left: 50%;">                      <div class="climber-body">
+                        <div class="hiker-head"></div>
+                        <div class="hiker-torso"></div>
+                        <div class="hiker-backpack"></div>
+                        <div class="hiker-arm hiker-arm-l"></div>
+                        <div class="hiker-arm hiker-arm-r"></div>
+                        <div class="hiker-leg hiker-l"></div>
+                        <div class="hiker-leg hiker-r"></div>
+                      </div>
+                    </div>
+                  </div>
+        <div class="mtn-layer mtn-front"></div>
+      </div>
+
+      <div class="container">
+        <!-- Hidden Project Sources -->
+        <div class="projects-source-container">
+          <div class="project-source" data-id="1">
+            <span class="project-type">Full-Stack</span>
+            <div class="project-details">
+              <h3>MMU Confessions</h3>
+              <p>Anonymous confession platform with user authentication, admin moderation, Microsoft OAuth, and cloud integration.</p>
+              <div class="project-tech"><span>Flask</span><span>PostgreSQL</span><span>SQLAlchemy</span><span>OAuth</span></div>
+              <div class="project-links"><a href="https://github.com/MarcusLiewZY/mmu_confessions" target="_blank" class="github-link">GitHub</a></div>
+            </div>
+          </div>
+          <div class="project-source" data-id="2">
+            <span class="project-type">Desktop</span>
+            <div class="project-details">
+              <h3>Course Timetable System</h3>
+              <p>Scheduling application built with C++ and Qt Framework featuring role-based access control and conflict detection.</p>
+              <div class="project-tech"><span>C++</span><span>Qt</span><span>OOP</span></div>
+              <div class="project-links"><a href="https://github.com/Mcl5323/course_timetable_management" target="_blank" class="github-link">GitHub</a></div>
+            </div>
+          </div>
+          <div class="project-source" data-id="3">
+            <span class="project-type">Security</span>
+            <div class="project-details">
+              <h3>WiFi Security Tool</h3>
+              <p>WPA2 security auditing tool using Python and pywifi for scanning networks and testing passwords. Built for educational purposes.</p>
+              <div class="project-tech"><span>Python</span><span>pywifi</span><span>Networking</span></div>
+              <div class="project-links"><a href="https://github.com/YBoonShen/wifi_security_tool" target="_blank" class="github-link">GitHub</a></div>
+            </div>
+          </div>
+          <div class="project-source" data-id="4">
+            <span class="project-type">Console</span>
+            <div class="project-details">
+              <h3>BINGO Game</h3>
+              <p>Multiplayer game with 8 modular classes, featuring account system, leaderboard, and save/load functionality.</p>
+              <div class="project-tech"><span>C++</span><span>OOP</span><span>File I/O</span></div>
+              <div class="project-links"><a href="https://github.com/joshuang87/BINGO" target="_blank" class="github-link">GitHub</a></div>
+            </div>
+          </div>
+          <div class="project-source" data-id="5">
+            <span class="project-type">Team</span>
+            <div class="project-details">
+              <h3>Budget Planner</h3>
+              <p>Personal finance tracking app with CRUD operations for income/expense management. Collaborated with 5 teammates.</p>
+              <div class="project-tech"><span>C++</span><span>Git</span></div>
+              <div class="project-links"><a href="https://github.com/joshuang87/Monthly_Budget_Planner" target="_blank" class="github-link">GitHub</a></div>
+            </div>
+          </div>
+          <div class="project-source" data-id="6">
+            <span class="project-type">Game</span>
+            <div class="project-details">
+              <h3>Dino Catch Game</h3>
+              <p>2D interactive game with real-time scoring and collision detection. Deployed to web using Pygbag.</p>
+              <div class="project-tech"><span>Python</span><span>Pygame</span><span>Pygbag</span></div>
+              <div class="project-links"><a href="https://github.com/YBoonShen/dino-game" target="_blank" class="github-link">GitHub</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="section" id="achievements">
+      <div class="container">
+        <h2 class="section-title">Achievements</h2>
+        
+        <!-- Achievements List -->
+        <div class="achievements-list">
+          <div class="achievement-item achievement-source" data-id="1">
+            <span class="achievement-year">2025</span>
+            <div class="achievement-content">
+              <h3>MMU CTF Competition — 100% Completion</h3>
+              <p>Solved all challenges across Forensics, Cryptography, Steganography, and Network Security domains.</p>
+            </div>
+          </div>
+          <div class="achievement-item achievement-source" data-id="2">
+            <span class="achievement-year">2025</span>
+            <div class="achievement-content">
+              <h3>Top 10 Finalist — MMU AI Judging Panel</h3>
+              <p>Selected for evaluating and presenting AI-integrated business solutions.</p>
+            </div>
+          </div>
+          <div class="achievement-item achievement-source" data-id="3">
+            <span class="achievement-year">2025</span>
+            <div class="achievement-content">
+              <h3>CodeNection Hackathon Participant</h3>
+              <p>Collaborated with team to prototype Tutorway, an on-demand academic assistance platform.</p>
+            </div>
+          </div>
+          <div class="achievement-item achievement-source" data-id="4">
+            <span class="achievement-year">2025</span>
+            <div class="achievement-content">
+              <h3>Mixue Coloring Competition — Top 10</h3>
+              <p>Recognized for creative design excellence. Previously ranked Top 100 in 2024.</p>
+            </div>
+          </div>
+          <div class="achievement-item achievement-source" data-id="5">
+            <span class="achievement-year">2025</span>
+            <div class="achievement-content">
+              <h3>AI Exploration Workshop — UTeM</h3>
+              <p>Developed AI Chatbot integrating Telegram API using Ollama framework for LLMs.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="underwater-world">
+          <!-- Floating Bubbles -->
+          <div class="bubble" style="left: 10%; --d: 6s; --x: 20px; width: 10px; height: 10px;"></div>
+          <div class="bubble" style="left: 30%; --d: 8s; --x: -30px; width: 15px; height: 15px;"></div>
+          <div class="bubble" style="left: 50%; --d: 5s; --x: 10px; width: 8px; height: 8px;"></div>
+          <div class="bubble" style="left: 70%; --d: 7s; --x: 40px; width: 12px; height: 12px;"></div>
+          <div class="bubble" style="left: 90%; --d: 9s; --x: -15px; width: 20px; height: 20px;"></div>
+
+          <!-- Achievement Markers -->
+          <div class="underwater-marker" style="top: 20%; left: 15%" data-achievement-id="1" data-label="MMU CTF 100%">
+            <div class="treasure-chest"></div>
+          </div>
+          <div class="underwater-marker" style="top: 60%; left: 35%" data-achievement-id="2" data-label="Top 10 AI Finalist">
+            <div class="treasure-chest"></div>
+          </div>
+          <div class="underwater-marker" style="top: 30%; left: 60%" data-achievement-id="3" data-label="CodeNection Hackathon">
+            <div class="treasure-chest"></div>
+          </div>
+          <div class="underwater-marker" style="top: 75%; left: 75%" data-achievement-id="4" data-label="Mixue Coloring Top 10">
+            <div class="treasure-chest"></div>
+          </div>
+          <div class="underwater-marker" style="top: 40%; left: 85%" data-achievement-id="5" data-label="AI Telegram Bot">
+            <div class="treasure-chest"></div>
+          </div>
+
+          <div id="diver" class="diver-pika" style="top: 50%; left: 50%;"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="thematic-modal">
+      <div class="modal-content">
+        <button class="close-modal">&times;</button>
+        <div id="modal-inner-content"></div>
+      </div>
+    </div>
+
+    <!-- Achievement Modal -->
+    <div id="achievement-modal" class="thematic-modal">
+      <div class="modal-content">
+        <button class="close-modal">&times;</button>
+        <div id="a-modal-inner-content"></div>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="section section-dark" id="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+          <p class="contact-text">
+            I'm currently looking for internship opportunities from July to October 2026. Whether you have a question or
+            just want to say hi, feel free to reach out!
+          </p>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=boonshen1159@gmail.com&su=Hello%20Boon%20Shen!&body=Hi%20Boon%20Shen,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect." target="_blank" class="btn btn-primary contact-btn">
+            Say Hello
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>Designed & Built by <a href="https://github.com/YBoonShen" target="_blank">Yeap Boon Shen</a></p>
+    </footer>
+
+    <!-- Fixed Social Icons -->
+    <div class="fixed-social">
+      <a href="https://github.com/YBoonShen" target="_blank" class="social-circle icon-github" data-tooltip="GitHub">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+          />
+        </svg>
+      </a>
+      <a
+        href="https://www.linkedin.com/in/boon-shen-yeap-b2360a341/"
+        target="_blank"
+        class="social-circle icon-linkedin"
+        data-tooltip="LinkedIn"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+          />
+        </svg>
+      </a>
+      <a href="https://wa.me/601163369388?text=Hi%20Boon%20Shen,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect!" target="_blank" class="social-circle icon-whatsapp" data-tooltip="WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"
+          />
+        </svg>
+      </a>
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=boonshen1159@gmail.com" target="_blank" class="social-circle icon-email" data-tooltip="Email">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"
+          />
+        </svg>
+      </a>
+    </div>
+
+    <!-- Back to Top Button - Pikachu -->
+    <div class="back-to-top" id="backToTop" onclick="scrollToTop()">
+      <div class="pika-btn">
+        <div class="pika-ear pika-ear-left"></div>
+        <div class="pika-ear pika-ear-right"></div>
+        <div class="pika-face">
+          <div class="pika-eye pika-eye-left"></div>
+          <div class="pika-eye pika-eye-right"></div>
+          <div class="pika-nose"></div>
+          <div class="pika-mouth">
+            <div class="pika-tongue"></div>
+          </div>
+          <div class="pika-cheek pika-cheek-left"></div>
+          <div class="pika-cheek pika-cheek-right"></div>
+        </div>
+      </div>
+      <span class="pika-text">Back to Top</span>
+    </div>
+
+    <script src="thematic.js"></script>
+    <script>
+      // Back to Top Button
+      const backToTop = document.getElementById('backToTop');
+
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+          backToTop.classList.add('visible');
+        } else {
+          backToTop.classList.remove('visible');
+        }
+      });
+
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth',
+        });
+      }
+    </script>
+  </body>
+</html>

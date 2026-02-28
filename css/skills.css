@@ -1,0 +1,48 @@
+/* ==================== */
+/* Skills Section - Clean Minimal Style */
+/* ==================== */
+
+.skills-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skills-category {
+    margin-bottom: 40px;
+}
+
+.skills-category:last-child {
+    margin-bottom: 0;
+}
+
+.skills-category h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #00bfff;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills-list span {
+    background: rgba(255, 255, 255, 0.05);
+    color: #ccd6f6;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.2s ease;
+}
+
+.skills-list span:hover {
+    background: rgba(0, 191, 255, 0.1);
+    border-color: rgba(0, 191, 255, 0.3);
+    color: #00bfff;
+}

@@ -1,0 +1,443 @@
+/* ==================== */
+/* Floating Background Animation */
+/* ==================== */
+
+/* Background container */
+.floating-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+/* Floating elements - Subtle */
+.floating-element {
+  position: absolute;
+  opacity: 0.25;
+  animation: float 30s ease-in-out infinite;
+}
+
+/* Different sizes */
+.floating-element.small {
+  width: 35px;
+  height: 35px;
+}
+
+.floating-element.medium {
+  width: 55px;
+  height: 55px;
+}
+
+.floating-element.large {
+  width: 90px;
+  height: 90px;
+}
+
+/* Star shape */
+.floating-element.star {
+  background: #ffd93d;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  filter: drop-shadow(0 0 8px rgba(255, 217, 61, 0.5));
+}
+
+/* Circle glow */
+.floating-element.glow {
+  background: radial-gradient(circle, rgba(255, 217, 61, 0.5) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+/* Pokeball style */
+.floating-element.pokeball {
+  background: linear-gradient(180deg, #ff4444 50%, #ffffff 50%);
+  border-radius: 50%;
+  position: relative;
+  border: 3px solid #333;
+  opacity: 0.25;
+}
+
+/* Positions */
+.float-1 {
+  top: 10%;
+  left: 5%;
+  animation-delay: 0s;
+}
+.float-2 {
+  top: 20%;
+  left: 85%;
+  animation-delay: -3s;
+}
+.float-3 {
+  top: 40%;
+  left: 10%;
+  animation-delay: -5s;
+}
+.float-4 {
+  top: 60%;
+  left: 90%;
+  animation-delay: -7s;
+}
+.float-5 {
+  top: 80%;
+  left: 15%;
+  animation-delay: -9s;
+}
+.float-6 {
+  top: 15%;
+  left: 70%;
+  animation-delay: -11s;
+}
+.float-7 {
+  top: 50%;
+  left: 5%;
+  animation-delay: -13s;
+}
+.float-8 {
+  top: 70%;
+  left: 80%;
+  animation-delay: -15s;
+}
+.float-9 {
+  top: 30%;
+  left: 95%;
+  animation-delay: -17s;
+}
+.float-10 {
+  top: 90%;
+  left: 50%;
+  animation-delay: -19s;
+}
+
+/* Float animation - Subtle movement */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(2deg);
+  }
+}
+
+/* Sparkle animation for stars */
+.floating-element.star {
+  animation:
+    float 20s ease-in-out infinite,
+    sparkle 2s ease-in-out infinite;
+}
+
+@keyframes sparkle {
+  0%,
+  100% {
+    opacity: 0.25;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.15);
+  }
+}
+
+/* Pikachu face - MORE VISIBLE */
+.pikachu-face {
+  width: 70px;
+  height: 60px;
+  background: #ffd93d;
+  border-radius: 50% 50% 45% 45%;
+  position: absolute;
+  opacity: 0.3;
+  animation:
+    float 18s ease-in-out infinite,
+    bounce 2s ease-in-out infinite;
+  filter: drop-shadow(0 0 10px rgba(255, 217, 61, 0.4));
+}
+
+.pikachu-face::before {
+  content: '';
+  position: absolute;
+  top: 18px;
+  left: 12px;
+  width: 45px;
+  height: 10px;
+  background:
+    radial-gradient(circle at 20% 50%, #333 5px, transparent 5px),
+    radial-gradient(circle at 80% 50%, #333 5px, transparent 5px);
+}
+
+.pikachu-face::after {
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 5px;
+  background: #333;
+  border-radius: 0 0 50% 50%;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Cheek blush - MORE VISIBLE */
+.pikachu-cheek {
+  width: 25px;
+  height: 18px;
+  background: #ff6b6b;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 0.35;
+  animation:
+    float 20s ease-in-out infinite,
+    pulse 1.5s ease-in-out infinite;
+  filter: drop-shadow(0 0 5px rgba(255, 107, 107, 0.5));
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.35;
+  }
+  50% {
+    transform: scale(1.3);
+    opacity: 0.5;
+  }
+}
+
+/* Lightning bolt - MORE VISIBLE */
+.lightning-bolt {
+  position: absolute;
+  width: 20px;
+  height: 40px;
+  opacity: 0.4;
+  animation:
+    float 16s ease-in-out infinite,
+    flash 3s ease-in-out infinite;
+  filter: drop-shadow(0 0 8px rgba(255, 217, 61, 0.6));
+}
+
+.lightning-bolt::before {
+  content: '⚡';
+  font-size: 40px;
+  color: #ffd93d;
+}
+
+@keyframes flash {
+  0%,
+  85%,
+  100% {
+    opacity: 0.3;
+  }
+  90%,
+  95% {
+    opacity: 0.7;
+  }
+}
+
+/* ==================== */
+/* Back to Top - Pikachu Face Button */
+/* ==================== */
+
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Pikachu Container */
+.pika-btn {
+  position: relative;
+  width: 80px;
+  height: 90px;
+  animation: pikaBounce 2s ease-in-out infinite;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 5px 15px rgba(255, 217, 61, 0.5));
+}
+
+.back-to-top:hover .pika-btn {
+  transform: scale(1.1);
+  filter: drop-shadow(0 8px 25px rgba(255, 217, 61, 0.7));
+}
+
+/* Pikachu Head - Rounder */
+.pika-face {
+  width: 60px;
+  height: 55px;
+  background: linear-gradient(170deg, #ffe566 0%, #ffd93d 50%, #f5c623 100%);
+  border-radius: 50% 50% 48% 48% / 55% 55% 45% 45%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Ears - Connected to head */
+.pika-ear {
+  position: absolute;
+  width: 18px;
+  height: 38px;
+  background: linear-gradient(to top, #ffd93d 60%, #1a1a1a 60%);
+  top: 0;
+  border-radius: 45% 45% 40% 40% / 80% 80% 20% 20%;
+}
+
+.pika-ear-left {
+  left: 6px;
+  transform: rotate(-25deg);
+  transform-origin: bottom right;
+}
+
+.pika-ear-right {
+  right: 6px;
+  transform: rotate(25deg);
+  transform-origin: bottom left;
+}
+
+/* Eyes - Big & Round with shine */
+.pika-eye {
+  position: absolute;
+  width: 14px;
+  height: 16px;
+  background: radial-gradient(circle at 30% 30%, #333 0%, #1a1a1a 100%);
+  border-radius: 50%;
+  top: 8px;
+}
+
+.pika-eye::before {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  border-radius: 50%;
+  top: 3px;
+  left: 4px;
+}
+
+.pika-eye-left {
+  left: 10px;
+}
+
+.pika-eye-right {
+  right: 10px;
+}
+
+/* Nose - Small oval */
+.pika-nose {
+  position: absolute;
+  width: 5px;
+  height: 4px;
+  background: #1a1a1a;
+  top: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+
+/* Mouth - Open smile with tongue */
+.pika-mouth {
+  position: absolute;
+  width: 22px;
+  height: 14px;
+  top: 34px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #8b2323;
+  border-radius: 0 0 50% 50% / 0 0 100% 100%;
+  border-top: 2px solid #1a1a1a;
+  overflow: hidden;
+}
+
+/* Tongue */
+.pika-tongue {
+  position: absolute;
+  width: 12px;
+  height: 10px;
+  background: #ff8c8c;
+  border-radius: 50%;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Cheeks - Round red circles */
+.pika-cheek {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: radial-gradient(circle, #e53935 0%, #c62828 100%);
+  border-radius: 50%;
+  top: 22px;
+}
+
+.pika-cheek-left {
+  left: 0;
+}
+
+.pika-cheek-right {
+  right: 0;
+}
+
+/* Text Label */
+.pika-text {
+  font-size: 11px;
+  color: #ffd93d;
+  font-weight: 600;
+  opacity: 0;
+  transform: translateY(5px);
+  transition: all 0.3s ease;
+  text-shadow: 0 0 10px rgba(255, 217, 61, 0.5);
+  white-space: nowrap;
+}
+
+.back-to-top:hover .pika-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Bounce Animation */
+@keyframes pikaBounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Eye blink on hover */
+.back-to-top:hover .pika-eye {
+  animation: blink 0.3s ease;
+}
+
+@keyframes blink {
+  50% {
+    transform: scaleY(0.1);
+  }
+}

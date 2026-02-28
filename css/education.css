@@ -1,0 +1,83 @@
+/* ==================== */
+/* Education Timeline */
+/* ==================== */
+
+/* Center the section title */
+#education .section-title {
+    justify-content: center;
+    text-align: center;
+}
+
+#education .section-title::after {
+    display: none;
+}
+
+.timeline {
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 30px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(180deg, #00bfff, #00ffff);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+    padding-left: 30px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -36px;
+    top: 5px;
+    width: 15px;
+    height: 15px;
+    background: #00bfff;
+    border-radius: 50%;
+    border: 3px solid #0d1225;
+}
+
+.timeline-date {
+    display: inline-block;
+    background: rgba(0, 191, 255, 0.15);
+    color: #00bfff;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.timeline-content h3 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.timeline-place {
+    color: #00bfff;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.timeline-content p {
+    color: #8892b0;
+    font-size: 15px;
+    line-height: 1.6;
+}
