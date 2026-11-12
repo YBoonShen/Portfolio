@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yeap Boon Shen - Portfolio</title>
+    <title>Yeap Boon Shen | Software Developer</title>
+    <meta name="description" content="Yeap Boon Shen — software developer with a security background. Built internet banking features at Silverlake Axis and a CTF platform with 21 challenges." />
 
     <!-- CSS Files -->
     <link rel="stylesheet" href="css/base.css" />
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="css/hero.css" />
     <link rel="stylesheet" href="css/social.css" />
     <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/experience.css" />
     <link rel="stylesheet" href="css/education.css" />
     <link rel="stylesheet" href="css/projects.css" />
     <link rel="stylesheet" href="css/achievements.css" />
@@ -26,6 +28,8 @@
     />
   </head>
   <body>
+    <!-- HTMMU{y0u_r34d_th3_s0urc3} -->
+
     <!-- Floating Background Elements -->
     <div class="floating-bg">
       <!-- Pikachu themed elements -->
@@ -49,7 +53,7 @@
         <a href="#" class="logo">YBS</a>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#achievements">Achievements</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -60,10 +64,10 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
       <div class="hero-content">
-        <span class="availability-badge">AVAILABLE FOR INTERNSHIP: JULY 2026 - OCT 2026</span>
+        <span class="availability-badge">OPEN TO FULL-TIME ROLES · AVAILABLE FROM NOVEMBER 2027</span>
         <h1>Hi, I'm <span class="gradient-text">Yeap Boon Shen</span></h1>
         <p class="subtitle">
-          A Security Technology student at MMU Melaka with a passion for software development and digital security.
+          I enjoy building web applications and learning about cybersecurity. Previously a software developer intern at Cyber Village, part of Silverlake Axis.
         </p>
 
         <div class="buttons">
@@ -93,98 +97,64 @@
     <!-- About Section -->
     <section class="section" id="about">
       <div class="container">
-        <h2 class="section-title">About Me</h2>
+        <h2 class="section-title about-section-title">About Me</h2>
         <div class="about-content">
           <div class="about-grid">
             <!-- Left: Text -->
             <div class="about-text">
-              <p>
-                Hello! I'm Boon Shen, a <span class="highlight">Security Technology</span> undergraduate at
-                <a href="https://www.mmu.edu.my/" target="_blank">MMU Melaka</a>, currently on the
-                <span class="highlight">Dean's List</span>. I enjoy building practical applications and exploring
-                cybersecurity challenges.
-              </p>
-              <p>
-                I've worked on various projects — from building a
-                <span class="highlight">full-stack confession platform</span> with Flask and PostgreSQL, to developing
-                desktop applications in C++ with Qt Framework, and even creating a WiFi security auditing tool for
-                educational purposes.
-              </p>
-              <p>
-                One of my proudest moments was completing <span class="highlight">100% of all challenges</span> in MMU's
-                Capture The Flag competition, covering Forensics, Cryptography, Steganography, and Network Security. I
-                also participated in <span class="highlight">CodeNection 2025</span>
-                hackathon where my team prototyped Tutorway, an on-demand academic assistance platform.
-              </p>
-              <p>
-                Outside of coding, I play badminton, explore digital art on my iPad, and occasionally help friends with
-                design projects. I'm currently seeking an internship opportunity from July to October 2026.
-              </p>
+              <div class="about-command"><span aria-hidden="true">&gt;</span> whoami</div>
+              <h3>Yeap Boon Shen <span class="about-cursor" aria-hidden="true"></span></h3>
+              <div class="about-role">IT · Security Technology</div>
+              <p>I'm an IT graduate from <span class="highlight">MMU Melaka</span>, majoring in <span class="highlight">Security Technology</span> with a CGPA of <span class="highlight">3.85</span>. I enjoy building web applications and thinking about security when I design new features.</p>
+              <p>During my internship at <span class="highlight">Cyber Village</span>, I worked on Bank Muamalat's internet banking system. I fixed a DuitNow AutoDebit bug, built test responses for FPX and deployed builds over SSH. I use AI coding tools to help with development, then review and test the results myself.</p>
             </div>
 
             <!-- Right: Photo & Info -->
             <div class="about-aside">
-              <div class="about-photo-wrapper">
-                <div class="about-photo">BS</div>
+              <div class="about-collage" aria-label="Photos from my travels and everyday life">
+                <span class="about-doodle doodle-cat" aria-hidden="true"></span>
+                <span class="about-doodle doodle-mountain" aria-hidden="true"></span>
+                <span class="about-doodle doodle-waves" aria-hidden="true"></span>
+                <figure class="about-polaroid polaroid-mountain">
+                  <img class="polaroid-image photo-mountain" src="img/WhatsApp%20Image%202026-11-12%20at%2011.29.28%20PM.jpeg" alt="Panalaban at Mount Kinabalu" />
+                  <figcaption>Mt. Kinabalu <small>30 Jun 2025</small></figcaption>
+                </figure>
+                <figure class="about-polaroid polaroid-badminton">
+                  <img class="polaroid-image photo-rock" src="img/WhatsApp%20Image%202026-11-12%20at%2011.29.27%20PM.jpeg" alt="A smiling face made from stones on a hiking trail" />
+                  <figcaption>Little moments</figcaption>
+                </figure>
+                <figure class="about-polaroid polaroid-beach">
+                  <img class="polaroid-image photo-beach" src="img/WhatsApp%20Image%202026-11-12%20at%2011.29.28%20PM%20(2).jpeg" alt="Boon Shen by the sea at Pulau Perhentian" />
+                  <figcaption>By the sea</figcaption>
+                </figure>
+                <figure class="about-polaroid polaroid-city">
+                  <img class="polaroid-image photo-city" src="img/WhatsApp%20Image%202026-11-12%20at%2011.29.28%20PM%20(1).jpeg" alt="A view of the Kuala Lumpur skyline" />
+                  <figcaption>City views</figcaption>
+                </figure>
+                <figure class="about-polaroid polaroid-island">
+                  <img class="polaroid-image photo-island" src="img/WhatsApp%20Image%202026-11-12%20at%2011.29.31%20PM.jpeg" alt="Boon Shen relaxing near the beach" />
+                  <figcaption>Island days</figcaption>
+                </figure>
               </div>
 
               <div class="about-facts">
                 <div class="about-fact">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
-                    <circle cx="12" cy="10" r="3" />
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z" /><path d="M6 12v5c3 3 9 3 12 0v-5" />
                   </svg>
-                  <span>Kelantan, Malaysia</span>
+                  <span>B.IT (Hons) Security Technology · CGPA 3.85</span>
                 </div>
                 <div class="about-fact">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
-                    <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="20" height="14" x="2" y="7" rx="2" ry="2" /><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
                   </svg>
-                  <span>Bachelor of IT (Security Technology)</span>
+                  <span>Interned at Cyber Village · Silverlake Axis</span>
                 </div>
                 <div class="about-fact">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <polygon
-                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
-                    />
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
                   </svg>
-                  <span>Dean's List</span>
-                </div>
-              </div>
-
-              <div class="about-skills">
-                <h4>Technologies</h4>
-                <div class="skill-tags">
-                  <span class="skill-tag">Python</span>
-                  <span class="skill-tag">C++</span>
-                  <span class="skill-tag">Java</span>
-                  <span class="skill-tag">Cisco Packet Tracer</span>
-                  <span class="skill-tag">HTML/CSS/JavaScript</span>
+                  <span>Chinese · English · Bahasa Melayu</span>
                 </div>
               </div>
             </div>
@@ -193,36 +163,76 @@
       </div>
     </section>
 
+    <!-- Experience Section -->
+    <section class="section section-dark" id="experience">
+      <div class="container exp-container">
+        <h2 class="section-title">Experience</h2>
+        <div class="exp-layout">
+          <div class="exp-story">
+            <div class="exp-title-row">
+              <div>
+                <p class="exp-company">CYBER VILLAGE <span> / SILVERLAKE AXIS</span></p>
+                <h3>Trainee Java<br />Software Developer<span class="exp-cursor" aria-hidden="true"></span></h3>
+              </div>
+            </div>
+            <p class="exp-intro">My first experience working on a real banking system, learning from the team and seeing how software is built, tested and deployed.</p>
+            <div class="exp-project"><span class="exp-project-dot"></span> BANK MUAMALAT <span class="exp-project-divider">/</span> RETAIL INTERNET BANKING</div>
+            <ul class="exp-highlights">
+              <li><span class="exp-number">01</span><div><strong>Built &amp; improved features</strong><p>Worked on web and mobile banking using Java, JSP, Angular and TypeScript.</p></div></li>
+              <li><span class="exp-number">02</span><div><strong>Investigated &amp; solved bugs</strong><p>Fixed a DuitNow AutoDebit reload issue and built test responses for FPX flows.</p></div></li>
+              <li><span class="exp-number">03</span><div><strong>Deployed &amp; shared knowledge</strong><p>Deployed builds to SIT and wrote guides for project setup and deployment.</p></div></li>
+            </ul>
+            <div class="exp-tech" aria-label="Technologies used">
+              <span class="exp-tech-chip" aria-label="Java and JSP" title="Java / JSP"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="" /></span>
+              <span class="exp-tech-chip" aria-label="Angular and TypeScript" title="Angular / TypeScript"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" alt="" /><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="" /></span>
+              <span class="exp-tech-chip" aria-label="SQL" title="SQL"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v7c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12v7c0 1.7 3.6 3 8 3s8-1.3 8-3v-7"/></svg></span>
+              <span class="exp-tech-chip" aria-label="SoapUI" title="SoapUI"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="9" cy="14" r="6"/><circle cx="16.5" cy="7.5" r="3.5"/><circle cx="18" cy="17" r="2"/></svg></span>
+              <span class="exp-tech-chip" aria-label="Git and Gerrit" title="Git / Gerrit"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="" /></span>
+              <span class="exp-tech-chip" aria-label="JBoss and SSH" title="JBoss / SSH"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="m7 9 3 3-3 3m5 0h5"/></svg></span>
+            </div>
+          </div>
+          <aside class="exp-memories" aria-label="Memories from my Cyber Village internship">
+            <div class="exp-memories-heading"><span>INTERNSHIP MEMORIES</span><span>✳</span></div>
+            <figure class="exp-photo exp-photo-office">
+              <div class="exp-tape" aria-hidden="true"></div>
+              <img src="img/WhatsApp%20Image%202026-11-12%20at%2011.59.53%20PM.jpeg" alt="Cyber Village office" loading="lazy" />
+              <figcaption>where it all started <span>↗</span></figcaption>
+            </figure>
+            <figure class="exp-photo exp-photo-team">
+              <div class="exp-tape" aria-hidden="true"></div>
+              <video autoplay muted loop playsinline preload="metadata" aria-label="Moments with the Cyber Village team"><source src="img/WhatsApp%20Video%202026-11-12%20at%2011.59.52%20PM.mp4" type="video/mp4" /></video>
+              <figcaption>the people <span>♡</span></figcaption>
+            </figure>
+            <figure class="exp-photo exp-photo-moments">
+              <div class="exp-tape" aria-hidden="true"></div>
+              <video autoplay muted loop playsinline preload="metadata" aria-label="Memories from the internship"><source src="img/WhatsApp%20Video%202026-11-12%20at%2011.59.55%20PM.mp4" type="video/mp4" /></video>
+              <figcaption>little moments <span>✳</span></figcaption>
+            </figure>
+          </aside>
+        </div>
+      </div>
+    </section>
+
     <!-- Education Section -->
-    <section class="section section-dark" id="education">
+    <section class="section" id="education">
       <div class="container">
         <h2 class="section-title">Education</h2>
         <div class="timeline">
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-              <span class="timeline-date">Aug 2024 - Present</span>
-              <h3>Bachelor of IT (Security Technology)</h3>
+              <span class="timeline-date">Aug 2024 – Jul 2027</span>
+              <h3>Bachelor of IT (Hons) Security Technology</h3>
               <p class="timeline-place">Multimedia University (MMU), Melaka</p>
-              <p>Dean's List recipient. Focusing on cybersecurity, software development, and network security.</p>
+              <p>CGPA 3.85 / 4.00 · Dean's List</p>
             </div>
           </div>
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-              <span class="timeline-date">Jul 2023 - Jul 2024</span>
+              <span class="timeline-date">Jul 2023 – Jul 2024</span>
               <h3>Foundation in Information Technology</h3>
               <p class="timeline-place">Multimedia University (MMU), Cyberjaya</p>
-              <p>Completed foundation studies in a competitive academic environment.</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <span class="timeline-date">2018 - 2023</span>
-              <h3>Sijil Pelajaran Malaysia (SPM)</h3>
-              <p class="timeline-place">SMJK Chung Cheng, Kelantan</p>
-              <p>Completed secondary education with SPM certification.</p>
             </div>
           </div>
         </div>
@@ -309,7 +319,7 @@
 
                   <!-- Project Popup -->
                   <div id="project-popup" class="project-popup">
-                    <button class="close-popup">&times;</button>
+                    <button class="close-popup" type="button" aria-label="Close project details">&times;</button>
                     <div id="project-popup-content"></div>
                   </div>
 
@@ -324,23 +334,14 @@
                   
                                       <!-- Interactive Path -->
                                     <div class="mountain-path">
-                                      <!-- Ranked from lowest (bottom) to highest (top) - Pulled Down Further -->
-                                      <div class="mountain-marker" style="bottom: 2%; left: 15%" data-project-id="6" data-label="Dino Catch">
+                                      <!-- 3 projects: base camp → summit -->
+                                      <div class="mountain-marker" role="button" tabindex="0" style="bottom: 8%; left: 25%" data-project-id="3" data-label="MMU Confessions">
                                         <div class="flag-pole"><div class="flag-cloth"></div></div>
                                       </div>
-                                      <div class="mountain-marker" style="bottom: 12%; left: 45%" data-project-id="5" data-label="Budget Planner">
+                                      <div class="mountain-marker" role="button" tabindex="0" style="bottom: 35%; left: 65%" data-project-id="2" data-label="AI Passport">
                                         <div class="flag-pole"><div class="flag-cloth"></div></div>
                                       </div>
-                                      <div class="mountain-marker" style="bottom: 25%; left: 75%" data-project-id="4" data-label="BINGO Game">
-                                        <div class="flag-pole"><div class="flag-cloth"></div></div>
-                                      </div>
-                                      <div class="mountain-marker" style="bottom: 38%; left: 35%" data-project-id="3" data-label="WiFi Security">
-                                        <div class="flag-pole"><div class="flag-cloth"></div></div>
-                                      </div>
-                                      <div class="mountain-marker" style="bottom: 52%; left: 65%" data-project-id="2" data-label="Timetable System">
-                                        <div class="flag-pole"><div class="flag-cloth"></div></div>
-                                      </div>
-                                      <div class="mountain-marker" style="bottom: 65%; left: 40%" data-project-id="1" data-label="MMU Confessions">
+                                      <div class="mountain-marker" role="button" tabindex="0" style="bottom: 62%; left: 40%" data-project-id="1" data-label="⛳ HackTheMMU">
                                         <div class="flag-pole"><div class="flag-cloth"></div></div>
                                       </div>
                                       
@@ -360,60 +361,33 @@
       </div>
 
       <div class="container">
-        <!-- Hidden Project Sources -->
+        <!-- Hidden Project Sources (shown in popup when flag is clicked) -->
         <div class="projects-source-container">
           <div class="project-source" data-id="1">
-            <span class="project-type">Full-Stack</span>
+            <span class="project-type">Final Year Project</span>
             <div class="project-details">
-              <h3>MMU Confessions</h3>
-              <p>Anonymous confession platform with user authentication, admin moderation, Microsoft OAuth, and cloud integration.</p>
-              <div class="project-tech"><span>Flask</span><span>PostgreSQL</span><span>SQLAlchemy</span><span>OAuth</span></div>
-              <div class="project-links"><a href="https://github.com/MarcusLiewZY/mmu_confessions" target="_blank" class="github-link">GitHub</a></div>
+              <h3>HackTheMMU</h3>
+              <p>A CTF platform where students practise cybersecurity through 21 hands-on challenges. Students can join classes, form teams and climb the leaderboard; lecturers can create challenges and track progress.</p>
+              <div class="project-tech"><span>FastAPI</span><span>MySQL</span><span>JavaScript</span><span>Oracle Cloud</span></div>
+              <div class="project-links"><a class="github-link" href="https://168-107-65-250.sslip.io/" target="_blank" rel="noopener noreferrer">Visit HackTheMMU <span aria-hidden="true">↗</span></a></div>
             </div>
           </div>
           <div class="project-source" data-id="2">
-            <span class="project-type">Desktop</span>
+            <span class="project-type">UTAR Hack Attack 3.0 · Top 10 Finalist</span>
             <div class="project-details">
-              <h3>Course Timetable System</h3>
-              <p>Scheduling application built with C++ and Qt Framework featuring role-based access control and conflict detection.</p>
-              <div class="project-tech"><span>C++</span><span>Qt</span><span>OOP</span></div>
-              <div class="project-links"><a href="https://github.com/Mcl5323/course_timetable_management" target="_blank" class="github-link">GitHub</a></div>
+              <h3>AI Passport</h3>
+              <p>A browser extension that helps protect sensitive information when employees use AI tools. Our team also designed training and access levels for responsible AI use.</p>
+              <div class="project-tech"><span>React</span><span>Node.js</span><span>Firebase</span><span>Gemini</span></div>
+              <div class="project-links"><a class="github-link" href="https://github.com/YBoonShen/utarhack-aipassport" target="_blank" rel="noopener noreferrer">View on GitHub <span aria-hidden="true">↗</span></a></div>
             </div>
           </div>
           <div class="project-source" data-id="3">
-            <span class="project-type">Security</span>
+            <span class="project-type">Group Project</span>
             <div class="project-details">
-              <h3>WiFi Security Tool</h3>
-              <p>WPA2 security auditing tool using Python and pywifi for scanning networks and testing passwords. Built for educational purposes.</p>
-              <div class="project-tech"><span>Python</span><span>pywifi</span><span>Networking</span></div>
-              <div class="project-links"><a href="https://github.com/YBoonShen/wifi_security_tool" target="_blank" class="github-link">GitHub</a></div>
-            </div>
-          </div>
-          <div class="project-source" data-id="4">
-            <span class="project-type">Console</span>
-            <div class="project-details">
-              <h3>BINGO Game</h3>
-              <p>Multiplayer game with 8 modular classes, featuring account system, leaderboard, and save/load functionality.</p>
-              <div class="project-tech"><span>C++</span><span>OOP</span><span>File I/O</span></div>
-              <div class="project-links"><a href="https://github.com/joshuang87/BINGO" target="_blank" class="github-link">GitHub</a></div>
-            </div>
-          </div>
-          <div class="project-source" data-id="5">
-            <span class="project-type">Team</span>
-            <div class="project-details">
-              <h3>Budget Planner</h3>
-              <p>Personal finance tracking app with CRUD operations for income/expense management. Collaborated with 5 teammates.</p>
-              <div class="project-tech"><span>C++</span><span>Git</span></div>
-              <div class="project-links"><a href="https://github.com/joshuang87/Monthly_Budget_Planner" target="_blank" class="github-link">GitHub</a></div>
-            </div>
-          </div>
-          <div class="project-source" data-id="6">
-            <span class="project-type">Game</span>
-            <div class="project-details">
-              <h3>Dino Catch Game</h3>
-              <p>2D interactive game with real-time scoring and collision detection. Deployed to web using Pygbag.</p>
-              <div class="project-tech"><span>Python</span><span>Pygame</span><span>Pygbag</span></div>
-              <div class="project-links"><a href="https://github.com/YBoonShen/dino-game" target="_blank" class="github-link">GitHub</a></div>
+              <h3>MMU Confessions</h3>
+              <p>An anonymous confession platform for MMU students. I designed the UI in Figma and worked with my teammates on the frontend.</p>
+              <div class="project-tech"><span>Figma</span><span>Flask</span><span>PostgreSQL</span></div>
+              <div class="project-links"><a class="github-link" href="https://github.com/MarcusLiewZY/mmu_confessions" target="_blank" rel="noopener noreferrer">View on GitHub <span aria-hidden="true">↗</span></a></div>
             </div>
           </div>
         </div>
@@ -421,75 +395,24 @@
     </section>
 
     <!-- Achievements Section -->
-    <section class="section" id="achievements">
-      <div class="container">
-        <h2 class="section-title">Achievements</h2>
-        
-        <!-- Achievements List -->
-        <div class="achievements-list">
-          <div class="achievement-item achievement-source" data-id="1">
-            <span class="achievement-year">2025</span>
-            <div class="achievement-content">
-              <h3>MMU CTF Competition — 100% Completion</h3>
-              <p>Solved all challenges across Forensics, Cryptography, Steganography, and Network Security domains.</p>
-            </div>
-          </div>
-          <div class="achievement-item achievement-source" data-id="2">
-            <span class="achievement-year">2025</span>
-            <div class="achievement-content">
-              <h3>Top 10 Finalist — MMU AI Judging Panel</h3>
-              <p>Selected for evaluating and presenting AI-integrated business solutions.</p>
-            </div>
-          </div>
-          <div class="achievement-item achievement-source" data-id="3">
-            <span class="achievement-year">2025</span>
-            <div class="achievement-content">
-              <h3>CodeNection Hackathon Participant</h3>
-              <p>Collaborated with team to prototype Tutorway, an on-demand academic assistance platform.</p>
-            </div>
-          </div>
-          <div class="achievement-item achievement-source" data-id="4">
-            <span class="achievement-year">2025</span>
-            <div class="achievement-content">
-              <h3>Mixue Coloring Competition — Top 10</h3>
-              <p>Recognized for creative design excellence. Previously ranked Top 100 in 2024.</p>
-            </div>
-          </div>
-          <div class="achievement-item achievement-source" data-id="5">
-            <span class="achievement-year">2025</span>
-            <div class="achievement-content">
-              <h3>AI Exploration Workshop — UTeM</h3>
-              <p>Developed AI Chatbot integrating Telegram API using Ollama framework for LLMs.</p>
-            </div>
-          </div>
+    <section class="section section-dark" id="achievements">
+      <div class="container achievement-container">
+        <div class="achievement-heading"><span class="achievement-command">&gt; achievements</span><h2 class="section-title">Achievements</h2><p>Highlights from competitions, workshops and my learning journey.</p></div>
+        <div class="achievement-feature-grid">
+          <article class="achievement-card achievement-featured">
+            <div class="achievement-emblem" aria-hidden="true"><span>✦</span><strong>10</strong><small>FINALIST</small></div>
+            <div class="achievement-feature-copy"><span class="achievement-badge">✦ &nbsp; Top 10 Finalist</span><h3>UTAR Hack Attack 3.0</h3><time>2026</time><p>Led Team Soda and presented AI Passport, our idea for safer AI use at work.</p></div>
+          </article>
+          <article class="achievement-card achievement-featured">
+            <div class="achievement-emblem achievement-emblem-idea" aria-hidden="true"><span>✧</span><strong>10</strong><small>FINALIST</small></div>
+            <div class="achievement-feature-copy"><span class="achievement-badge">✦ &nbsp; Top 10 Finalist</span><h3>MMU Business Intelligence &amp; AI</h3><time>2025</time><p>Presented JUST Press, an idea to connect services and control them with one press.</p></div>
+          </article>
         </div>
-
-        <div class="underwater-world">
-          <!-- Floating Bubbles -->
-          <div class="bubble" style="left: 10%; --d: 6s; --x: 20px; width: 10px; height: 10px;"></div>
-          <div class="bubble" style="left: 30%; --d: 8s; --x: -30px; width: 15px; height: 15px;"></div>
-          <div class="bubble" style="left: 50%; --d: 5s; --x: 10px; width: 8px; height: 8px;"></div>
-          <div class="bubble" style="left: 70%; --d: 7s; --x: 40px; width: 12px; height: 12px;"></div>
-          <div class="bubble" style="left: 90%; --d: 9s; --x: -15px; width: 20px; height: 20px;"></div>
-
-          <!-- Achievement Markers -->
-          <div class="underwater-marker" style="top: 20%; left: 15%" data-achievement-id="1" data-label="MMU CTF 100%">
-            <div class="treasure-chest"></div>
-          </div>
-          <div class="underwater-marker" style="top: 60%; left: 35%" data-achievement-id="2" data-label="Top 10 AI Finalist">
-            <div class="treasure-chest"></div>
-          </div>
-          <div class="underwater-marker" style="top: 30%; left: 60%" data-achievement-id="3" data-label="CodeNection Hackathon">
-            <div class="treasure-chest"></div>
-          </div>
-          <div class="underwater-marker" style="top: 75%; left: 75%" data-achievement-id="4" data-label="Mixue Coloring Top 10">
-            <div class="treasure-chest"></div>
-          </div>
-          <div class="underwater-marker" style="top: 40%; left: 85%" data-achievement-id="5" data-label="AI Telegram Bot">
-            <div class="treasure-chest"></div>
-          </div>
-
-          <div id="diver" class="diver-pika" style="top: 50%; left: 50%;"></div>
+        <div class="achievement-small-grid">
+          <article class="achievement-card achievement-small"><span class="achievement-icon" aria-hidden="true">⚑</span><div><h3>MMU CTF Lab</h3><strong>100% Completion</strong><time>2025</time><p>Completed challenges in forensics, cryptography, steganography and network security.</p></div></article>
+          <article class="achievement-card achievement-small"><span class="achievement-icon" aria-hidden="true">⌘</span><div><h3>IBOH26 Prep Workshop</h3><strong>APU FSECSS</strong><time>2026</time><p>Joined an online team session to solve guided CTF challenges.</p></div></article>
+          <article class="achievement-card achievement-small"><span class="achievement-icon" aria-hidden="true">✳</span><div><h3>AI Exploration Workshop</h3><strong>UTeM</strong><time>2025</time><p>Explored generative AI and Ollama, and presented a Telegram chatbot.</p></div></article>
+          <article class="achievement-card achievement-small"><span class="achievement-icon" aria-hidden="true">&lt;/&gt;</span><div><h3>Also took part in</h3><strong>Hackathon &amp; training</strong><time>2025–2026</time><p>CodeNection Hackathon (2025, 2026) and AWS CendekiAwan 2.0 (2025).</p></div></article>
         </div>
       </div>
     </section>
@@ -502,22 +425,13 @@
       </div>
     </div>
 
-    <!-- Achievement Modal -->
-    <div id="achievement-modal" class="thematic-modal">
-      <div class="modal-content">
-        <button class="close-modal">&times;</button>
-        <div id="a-modal-inner-content"></div>
-      </div>
-    </div>
-
     <!-- Contact Section -->
     <section class="section section-dark" id="contact">
       <div class="container">
         <h2 class="section-title">Get In Touch</h2>
         <div class="contact-content">
           <p class="contact-text">
-            I'm currently looking for internship opportunities from July to October 2026. Whether you have a question or
-            just want to say hi, feel free to reach out!
+            I'm looking for a full-time role in software development or cybersecurity. I can start in November 2027. Email is the fastest way to reach me!
           </p>
           <a href="https://mail.google.com/mail/?view=cm&fs=1&to=boonshen1159@gmail.com&su=Hello%20Boon%20Shen!&body=Hi%20Boon%20Shen,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect." target="_blank" class="btn btn-primary contact-btn">
             Say Hello
@@ -547,7 +461,7 @@
 
     <!-- Fixed Social Icons -->
     <div class="fixed-social">
-      <a href="https://github.com/YBoonShen" target="_blank" class="social-circle icon-github" data-tooltip="GitHub">
+      <a href="https://github.com/YBoonShen" target="_blank" class="social-circle icon-github" data-tooltip="My repos">
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
           <path
             d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
@@ -555,10 +469,10 @@
         </svg>
       </a>
       <a
-        href="https://www.linkedin.com/in/boon-shen-yeap-b2360a341/"
+        href="https://www.linkedin.com/in/yeap-boon-shen/"
         target="_blank"
         class="social-circle icon-linkedin"
-        data-tooltip="LinkedIn"
+        data-tooltip="Let's connect"
       >
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
           <path
@@ -566,14 +480,14 @@
           />
         </svg>
       </a>
-      <a href="https://wa.me/601163369388?text=Hi%20Boon%20Shen,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect!" target="_blank" class="social-circle icon-whatsapp" data-tooltip="WhatsApp">
+      <a href="https://wa.me/601163369388?text=Hi%20Boon%20Shen,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect!" target="_blank" class="social-circle icon-whatsapp" data-tooltip="Fastest reply here">
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
           <path
             d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"
           />
         </svg>
       </a>
-      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=boonshen1159@gmail.com" target="_blank" class="social-circle icon-email" data-tooltip="Email">
+      <a href="mailto:boonshen1159@gmail.com" class="social-circle icon-email" data-tooltip="Drop me a mail">
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
           <path
             d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"
@@ -603,6 +517,9 @@
 
     <script src="thematic.js"></script>
     <script>
+      // CTF flag for anyone who opens the console 🏴
+      console.log('%cHTMMU{c0ns0l3_hunt3r}', 'color:#00bfff;font-size:16px;font-weight:bold', '\nNice, you found it. Say hi: boonshen1159@gmail.com');
+
       // Back to Top Button
       const backToTop = document.getElementById('backToTop');
 

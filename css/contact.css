@@ -28,3 +28,6 @@
 .contact-btn:hover svg {
     transform: translateX(5px);
 }
+
+#contact .section-title { justify-content: center; text-align: center; }
+#contact .section-title::after { display: none; }

@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     initMountain();
-    initUnderwater();
+    if (document.getElementById('achievement-modal')) initUnderwater();
 });
 
 function initMountain() {
@@ -66,7 +66,7 @@ function initMountain() {
                     climber.classList.remove('cheering');
                     flag.style.animation = 'wave 2s infinite';
                     showProjectPopup(marker.dataset.projectId, targetX, targetY);
-                }, 1000); 
+                }, 1000);
             }, 1000); 
         });
     });
@@ -85,16 +85,6 @@ function initMountain() {
         if (originalProject) {
             popupContent.innerHTML = originalProject.innerHTML;
             
-            // Default: Position popup ABOVE the marker
-            let popupX = x + 2; 
-            let popupY = 100 - y - 45; // Pull it UP significantly (45% of container height)
-
-            // Smart positioning logic
-            if (x > 60) popupX = x - 32; // If too far right, flip to left side
-            if (popupY < 5) popupY = 100 - y + 10; // If too close to top, show BELOW instead
-
-            popup.style.left = `${popupX}%`;
-            popup.style.top = `${popupY}%`;
             popup.classList.add('active');
         }
     }
@@ -102,6 +92,14 @@ function initMountain() {
     closeBtn.addEventListener('click', () => {
         popup.classList.remove('active');
     });
+
+    popup.addEventListener('click', (event) => event.stopPropagation());
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') popup.classList.remove('active');
+    });
+    projectMarkers.forEach((marker) => marker.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); marker.click(); }
+    }));
 
     // Close on click outside markers
     world.addEventListener('click', () => {

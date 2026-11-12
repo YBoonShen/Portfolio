@@ -18,15 +18,16 @@
 /* Availability Badge */
 .availability-badge {
     display: inline-block;
-    background: transparent;
-    color: #00bfff;
-    padding: 10px 25px;
+    background: #00c8f8;
+    color: #071321;
+    padding: 12px 25px;
     border-radius: 30px;
-    border: 2px solid #00bfff;
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 1px;
+    border: 2px solid #00c8f8;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
     margin-bottom: 30px;
+    box-shadow: 0 0 24px rgba(0, 200, 248, 0.2);
 }
 
 /* Main Heading */

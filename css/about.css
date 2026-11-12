@@ -186,3 +186,73 @@
         font-size: 36px;
     }
 }
+
+/* Terminal introduction and personal photo collage */
+#about .section-title { margin-bottom: 42px; }
+.about-content { max-width: 1160px; }
+.about-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 60px; align-items: center; }
+.about-text { font-family: "Courier New", monospace; }
+.about-command { color: #00d5f5; font-size: 14px; font-weight: 700; letter-spacing: .06em; margin-bottom: 12px; }
+.about-command span { margin-right: 8px; }
+.about-text h3 { font-family: "Courier New", monospace; color: #f4f7fb; font-size: clamp(28px, 3.2vw, 43px); line-height: 1.2; margin: 0 0 9px; }
+.about-cursor { display: inline-block; width: 12px; height: .75em; background: #9ac9e4; vertical-align: baseline; }
+.about-role { color: #aab8cf; font-size: 14px; margin-bottom: 22px; }
+.about-text p { color: #d3d9e4; font-size: 15px; line-height: 1.75; margin: 0 0 17px; }
+.about-text p:first-of-type::first-letter { font-size: inherit; font-weight: inherit; color: inherit; float: none; line-height: inherit; margin: 0; }
+.about-text .highlight { color: #00d5f5; font-weight: 700; }
+.about-availability { display: inline-block; padding: 10px 13px; border: 1px solid #00c9ee; border-radius: 4px; color: #00d5f5; font-size: 13px; line-height: 1.5; }
+.about-collage { position: relative; width: 100%; min-height: 490px; margin: 0 auto 28px; }
+.about-doodle { position: absolute; display: block; pointer-events: none; background-image: url("../img/about-doodles.svg"); background-repeat: no-repeat; background-size: 400% 400%; }
+.doodle-cat { width: 92px; height: 58px; left: 10%; top: -31px; z-index: 3; background-position: left top; }
+.doodle-mountain { width: 90px; height: 48px; right: -13%; top: -57px; z-index: 1; background-position: right top; transform: rotate(7deg); }
+.doodle-waves { width: 85px; height: 40px; right: -19%; bottom: 35px; z-index: 1; background-position: right bottom; }
+.about-polaroid { position: absolute; margin: 0; padding: 10px 10px 12px; background: #f2f0ec; color: #181c26; box-shadow: 0 12px 32px rgba(0, 0, 0, .35); }
+.about-polaroid::before { content: ""; position: absolute; width: 72px; height: 21px; left: 35%; top: -9px; background: rgba(219, 204, 173, .75); transform: rotate(-4deg); z-index: 2; }
+.polaroid-image { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; background-color: #1d3044; }
+.photo-mountain { object-position: center 45%; }
+.photo-rock { object-position: center 65%; }
+.photo-beach { object-position: center 65%; }
+.photo-city { object-position: center 42%; }
+.photo-island { object-position: center 72%; }
+.about-polaroid figcaption { padding-top: 8px; font-family: "Courier New", monospace; font-size: 13px; font-weight: 700; line-height: 1.2; }
+.about-polaroid figcaption small { display: block; margin-top: 3px; font-size: 11px; font-weight: 400; }
+.polaroid-mountain { width: 48%; top: 42px; left: 1%; transform: rotate(-7deg); z-index: 2; }
+.polaroid-badminton { width: 28%; top: 15px; right: 1%; transform: rotate(9deg); z-index: 3; }
+.polaroid-beach { width: 39%; right: 0; top: 190px; transform: rotate(7deg); z-index: 4; }
+.polaroid-city { width: 27%; top: 67px; left: 50%; transform: rotate(5deg); z-index: 1; }
+.polaroid-island { width: 34%; left: 20%; bottom: 5px; transform: rotate(-5deg); z-index: 3; }
+.about-facts { display: flex; flex-direction: column; gap: 12px; }
+.about-fact { align-items: flex-start; color: #aebbd0; font-size: 14px; line-height: 1.5; }
+@media (max-width: 768px) {
+    .about-grid { grid-template-columns: 1fr; gap: 32px; }
+    .about-aside { order: 0; }
+    .about-collage { max-width: 440px; min-height: 440px; margin-top: 15px; }
+    .about-text p:first-of-type::first-letter { font-size: inherit; }
+}
+@media (max-width: 420px) {
+    .about-collage { min-height: 350px; }
+    .doodle-cat { width: 70px; height: 46px; left: 10%; top: -27px; }
+    .doodle-mountain { width: 60px; height: 35px; right: 0; top: -43px; }
+    .doodle-waves { width: 58px; height: 30px; right: -5%; bottom: 0; }
+    .about-polaroid { padding: 7px 7px 10px; }
+    .about-polaroid figcaption { font-size: 11px; }
+    .about-availability { font-size: 12px; }
+    .polaroid-beach { top: 130px; }
+}
+
+/* Fit the introduction and collage comfortably on desktop screens. */
+@media (min-width: 769px) {
+    #about { padding-top: 64px; padding-bottom: 64px; scroll-margin-top: 65px; }
+    #about .section-title { margin-bottom: 30px; }
+    .about-content { max-width: 1110px; }
+    .about-grid { gap: 52px; align-items: center; }
+    .about-collage { max-width: 510px; min-height: 375px; margin-bottom: 12px; }
+    .about-text p { line-height: 1.65; margin-bottom: 15px; }
+    .about-role { margin-bottom: 18px; }
+    .about-facts { gap: 7px; }
+    .polaroid-mountain { width: 47%; top: 30px; left: 0; transform: rotate(-6deg); }
+    .polaroid-city { width: 26%; top: 18px; left: 49%; transform: rotate(4deg); z-index: 1; }
+    .polaroid-badminton { width: 25%; top: 0; right: 0; transform: rotate(7deg); }
+    .polaroid-beach { width: 36%; right: 1%; top: 165px; transform: rotate(5deg); }
+    .polaroid-island { width: 32%; left: 30%; bottom: 7px; transform: rotate(-4deg); }
+}

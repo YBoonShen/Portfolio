@@ -521,3 +521,23 @@
     font-size: 14px;
     margin-bottom: 15px;
 }
+
+/* Keep project details comfortably within the viewport. */
+.project-popup { position: fixed; left: 50%; top: calc(50% + 30px); transform: translate(-50%, -50%); width: min(420px, calc(100vw - 36px)); max-height: calc(100dvh - 105px); overflow-y: auto; padding: 25px; background: rgba(13,18,37,.98); }
+.project-popup.active { animation: none; }
+.project-popup .close-popup { color: #c9d7e8; line-height: 1; }
+.project-popup .project-type { display: block; padding: 0 30px 8px 0; color: #8daec6; font-size: 10px; }
+.project-popup h3 { padding-right: 25px; font-size: 21px; line-height: 1.3; }
+.project-popup .project-details p { color: #c0cde0; font-size: 14px; line-height: 1.6; margin-bottom: 12px; }
+.project-popup .project-tech { margin: 12px 0 6px; }
+.project-popup .github-link { gap: 8px; font-size: 13px; }
+#projects.day-mode .project-popup .close-popup, #projects.day-mode .project-popup .project-details p { color: #234b2d; }
+.mountain-marker:focus-visible { outline: 2px solid #00f2fe; outline-offset: 8px; }
+
+/* Project links */
+.project-popup .github-link { gap: 9px; margin-top: 14px; padding: 9px 13px; border: 1px solid rgba(0, 215, 243, .5); border-radius: 6px; background: rgba(0, 215, 243, .07); color: #a4eff5; font: 500 12px/1.2 'SF Mono', Consolas, monospace; letter-spacing: .02em; transition: background .2s, border-color .2s, color .2s; }
+.project-popup .github-link:hover, .project-popup .github-link:focus-visible { background: rgba(0, 215, 243, .16); border-color: #00d7f3; color: #fff; }
+.project-popup .github-link span { color: #00d7f3; font-size: 15px; }
+#projects.day-mode .project-popup .github-link { background: rgba(46, 125, 50, .08); border-color: #2e7d32; color: #205c2b; }
+#projects.day-mode .project-popup .github-link:hover, #projects.day-mode .project-popup .github-link:focus-visible { background: rgba(46, 125, 50, .18); color: #143c1b; }
+#projects.day-mode .project-popup .github-link span { color: #2e7d32; }

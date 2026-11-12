@@ -1,0 +1,46 @@
+/* Internship experience */
+#experience { padding: 30px 24px 72px; scroll-margin-top: 72px; }
+#experience .exp-container { max-width: 1150px; }
+#experience .section-title { justify-content: center; margin-bottom: 28px; font-size: 32px; }
+#experience .section-title::after { display: none; }
+.exp-layout { display: grid; grid-template-columns: minmax(390px, .96fr) minmax(0, 1.04fr); gap: 64px; align-items: center; }
+.exp-story { min-width: 0; }
+.exp-eyebrow { display: flex; align-items: center; gap: 10px; color: #00d7f3; font: 600 13px/1.3 'SF Mono', 'Fira Code', Consolas, monospace; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 20px; }
+.exp-line { height: 1px; width: 36px; background: rgba(0,215,243,.5); }
+.exp-title-row { display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; }
+.exp-company { color: #00d7f3; font: 700 12px/1.5 'SF Mono', Consolas, monospace; letter-spacing: .1em; }
+.exp-company span { color: #8796b0; font-weight: 400; }
+.exp-title-row h3 { color: #f3f6ff; font: 600 clamp(30px, 2.7vw, 42px)/1.13 'Fredoka', sans-serif; letter-spacing: .01em; margin: 9px 0 0; }
+.exp-cursor { display: inline-block; width: 9px; height: .85em; margin-left: 8px; background: #93c9e3; vertical-align: baseline; }
+.exp-date { flex: 0 0 auto; color: #b3bfd1; border-left: 1px solid #31445a; padding-left: 14px; margin-top: 5px; font: 600 11px/1.65 'SF Mono', Consolas, monospace; letter-spacing: .08em; }
+.exp-date span { color: #00d7f3; }.exp-date strong { color: #e7edf8; font-size: 18px; }
+.exp-intro { max-width: 540px; margin: 19px 0 23px; color: #aab6ca; font-size: 14px; line-height: 1.65; }
+.exp-project { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; color: #d9e2ef; font: 600 11px/1.5 'SF Mono', Consolas, monospace; letter-spacing: .06em; }
+.exp-project-dot { width: 7px; height: 7px; border-radius: 50%; background: #00d7f3; box-shadow: 0 0 10px #00d7f3; }.exp-project-divider { color: #53647a; }
+.exp-highlights { list-style: none; margin: 15px 0 0; padding: 0; }
+.exp-highlights li { display: grid; grid-template-columns: 30px 1fr; gap: 10px; padding: 10px 0; border-top: 1px solid rgba(175,196,220,.13); }
+.exp-number { color: #00d7f3; font: 12px/1.7 'SF Mono', Consolas, monospace; }.exp-highlights strong { color: #edf3fb; font-size: 13px; font-weight: 600; }.exp-highlights p { color: #aab6ca; font-size: 12.5px; line-height: 1.55; margin-top: 2px; }
+.exp-tech { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 15px; }
+.exp-tech-chip { display: inline-flex; align-items: center; justify-content: center; gap: 5px; min-width: 36px; min-height: 36px; padding: 7px; border: 1px solid rgba(0,215,243,.22); border-radius: 6px; background: rgba(0,215,243,.06); color: #c9e7ef; font: 10px/1.2 'SF Mono', Consolas, monospace; text-decoration: none; transition: background .2s, border-color .2s; }
+.exp-tech-chip:hover, .exp-tech-chip:focus-visible { background: rgba(0,215,243,.15); border-color: #00d7f3; }
+.exp-tech-chip img, .exp-tech-chip svg, .exp-icon-text { display: block; width: 20px; height: 20px; flex: 0 0 20px; }
+.exp-tech-chip svg { color: #53d4e8; }
+.exp-icon-text { display: grid; place-items: center; border-radius: 4px; background: #4d953c; color: white; font: 700 10px/1 sans-serif; }
+.exp-memories { order: -1; min-height: 500px; position: relative; isolation: isolate; }
+.exp-memories-heading { display: flex; justify-content: space-between; align-items: center; color: #8595aa; border-bottom: 1px solid #334153; padding-bottom: 10px; font: 11px/1.2 'SF Mono', Consolas, monospace; letter-spacing: .14em; }.exp-memories-heading i { color: #00d7f3; font-style: normal; }.exp-memories-heading span:last-child { color: #00d7f3; font-size: 18px; }
+.exp-photo { position: absolute; background: #f0eee9; padding: 9px 9px 8px; color: #1b2534; box-shadow: 0 12px 24px rgba(0,0,0,.28); }
+.exp-photo img, .exp-photo video { width: 100%; display: block; object-fit: cover; background: #29313c; }.exp-photo figcaption { display: flex; justify-content: space-between; gap: 8px; margin-top: 9px; font: 700 12px/1.2 'SF Mono', Consolas, monospace; }.exp-photo figcaption span { color: #426879; }
+.exp-tape { position: absolute; z-index: 2; width: 70px; height: 20px; background: rgba(220,206,176,.72); top: -10px; left: calc(50% - 35px); transform: rotate(-4deg); }
+.exp-photo-office { width: 54%; top: 62px; left: 1%; transform: rotate(-5deg); z-index: 1; }.exp-photo-office img { height: 205px; object-position: center; }
+.exp-photo-team { width: 39%; top: 39px; right: 2%; transform: rotate(5deg); z-index: 2; }.exp-photo-team video { height: 200px; object-fit: cover; }
+.exp-photo-moments { width: 43%; top: 250px; right: 12%; transform: rotate(3deg); z-index: 3; }.exp-photo-moments video { height: 200px; object-fit: contain; object-position: center bottom; }
+@media (max-width: 900px) { #experience { padding: 30px 24px 70px; }.exp-layout { gap: 30px; grid-template-columns: minmax(300px,.9fr) minmax(0,1fr); }.exp-memories { min-height: 450px; }.exp-photo-office img { height: 170px; }.exp-photo-team video { height: 165px; }.exp-photo-moments { top: 220px; }.exp-photo-moments video { height: 180px; } }
+@media (max-width: 700px) { #experience { padding: 30px 22px 70px; } #experience .section-title { margin-bottom: 32px; }.exp-layout { grid-template-columns: 1fr; gap: 35px; }.exp-title-row h3 { font-size: 34px; }.exp-memories { width: min(100%, 430px); min-height: 450px; margin: 0 auto; }.exp-photo-office img { height: 180px; }.exp-photo-team video { height: 170px; }.exp-photo-moments video { height: 180px; }.exp-handnote { bottom: 18px; } }
+@media (max-width: 380px) { .exp-company { font-size: 10px; }.exp-title-row h3 { font-size: 29px; }.exp-memories { min-height: 400px; }.exp-photo-office img { height: 150px; }.exp-photo-team video { height: 145px; }.exp-photo-moments { top: 195px; }.exp-photo-moments video { height: 155px; }.exp-photo figcaption { font-size: 10px; } }
+
+/* Fit the little-moments frame to the portrait video. */
+.exp-photo-moments { width: 30%; top: 220px; left: 35%; right: auto; }
+.exp-photo-moments video { height: auto; aspect-ratio: 9 / 16; object-fit: contain; background: #f0eee9; }
+@media (max-width: 900px) { .exp-photo-moments { width: 34%; top: 205px; left: 33%; right: auto; } .exp-photo-moments video { height: auto; } }
+@media (max-width: 700px) { .exp-photo-moments { width: 34%; } .exp-photo-moments video { height: auto; } }
+@media (max-width: 380px) { .exp-photo-moments { width: 34%; top: 185px; } .exp-photo-moments video { height: auto; } }
